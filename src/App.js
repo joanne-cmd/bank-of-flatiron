@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import './App.css';
+import searchicon from "./search-3-16-removebg-preview.png"
 function Headers(){
   return(
     <div className="heading">
@@ -14,9 +15,11 @@ function Search({searchitem}){
   return(
     <div className='searchbar'>
       <input name="search" value={searchitem}type="text " placeholder='Search Your Recent Transaction' />
+      <img src={searchicon} alt="search icon"/>
     </div>
   )
 }
+
 
 function App() {
   const [ searchitem , setsearchitem]= useState()
