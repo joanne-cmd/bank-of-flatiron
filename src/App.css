@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .app{
   font-size: larger;
 }
@@ -14,4 +17,18 @@
   padding-top: 1%;
   padding-bottom: 1%;
   font-size: larger;
+  font-weight: bold;
+  border: none;
+}
+.searchbar input{
+  width: 100%;
+  
+  padding-top: 1%;
+  
+}
+.searchbar{
+  width: 80%;
+  margin: 2% auto;
+  display:block;
+  
 }

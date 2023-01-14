@@ -10,12 +10,18 @@ function Headers(){
     </div>
   )
 }
-//function search
+function Search({searchitem}){
+  return(
+  
+  )
+}
 
 function App() {
+  const [ searchitem , setsearchitem]= useState()
   return (
     <div className='app'>
         <Headers/>
+        <Search searchitem={searchitem}/>
     </div>
     
   )
