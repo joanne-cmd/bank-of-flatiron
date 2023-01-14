@@ -95,6 +95,7 @@ function App() {
       setsearchitem(event.target.value)
       
   }
+
   function fetchData(url){
     fetch(url)
     .then(resp=>resp.json())
@@ -119,13 +120,21 @@ function App() {
    useEffect(()=>{
     fetchData("http://localhost:4000/transactions")
    },[])
-  console.log(tableDetails)
+const tableDetailsfilter=tableDetails.filter((detailstable)=>{
+  if (setsearchitem === ""){
+    return true
+  }
+  else{
+    return detailstable.description.toLowerCase().includes(searchitem.toLowerCase())
+  }
+  
+})
   return (
     <div className='app'>
         <Headers/>
         <Search handleSearchitem={handleSearchitem}searchitem={searchitem}/>
         <Category addTranscation={addTranscation} />
-        <Table tableDetails={tableDetails}/>
+        <Table tableDetails={tableDetailsfilter}/>
     </div>
     
   )
