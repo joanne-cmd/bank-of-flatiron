@@ -12,7 +12,9 @@ function Headers(){
 }
 function Search({searchitem}){
   return(
-  
+    <div className='searchbar'>
+      <input name="search" value={searchitem}type="text " placeholder='Search Your Recent Transaction' />
+    </div>
   )
 }
 
