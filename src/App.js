@@ -1,3 +1,4 @@
+import { type } from '@testing-library/user-event/dist/type';
 import React,{ useState, useEffect } from 'react';
 import './App.css';
 import searchicon from "./search-3-16-removebg-preview.png"
@@ -101,8 +102,13 @@ function App() {
   }
 
   function addTranscation(trans){
-    trans.id=tableDetails.length
-    settableDetails([...tableDetails, trans])
+    fetch("http://localhost:4000/transactions",{
+      method: "POST",
+      headers:"content-type"
+    })
+    .then(resp=>resp.json())
+    .then( data=>settableDetails([...tableDetails, data]))
+    
   }
 
   
