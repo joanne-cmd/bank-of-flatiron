@@ -69,7 +69,6 @@ function  Table ({tableDetails}){
         amount:event.target.amount.value
       }
 
-      alert(addedData)
       addTranscation(addedData)
     }
     return(
