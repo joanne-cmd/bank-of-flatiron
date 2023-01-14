@@ -104,10 +104,14 @@ function App() {
   function addTranscation(trans){
     fetch("http://localhost:4000/transactions",{
       method: "POST",
-      headers:"content-type"
+      headers:{"Content-Type":"application/json",
+              "Accept":"application/json"
+    },
+    body:JSON.stringify(trans)
+
     })
     .then(resp=>resp.json())
-    .then( data=>settableDetails([...tableDetails, data]))
+    .then( data=>settableDetails([data, ...tableDetails ]))
     
   }
 
