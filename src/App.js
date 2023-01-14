@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React,{ useState } from 'react';
 import './App.css';
+function Headers(){
+  return(
+    <div className="heading">
+      <h1 >Bank of Flatiron</h1>
+      <p>Welcome to the Bank of Flatiron, where you can trust us with all your financial data!
+       Use the below gif as an example of how the app should function.</p>
+       <button className='btn'>The Royal Bank of Flatiron</button>
+    </div>
+  )
+}
+//function search
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+        <Headers/>
     </div>
-  );
+    
+  )
+  
 }
 
 export default App;
