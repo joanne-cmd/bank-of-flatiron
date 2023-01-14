@@ -22,7 +22,7 @@
 }
 .searchbar input{
   width: 100%;
-  padding-top: 1%;
+  padding: 5px;
   border: none;
   
 }
@@ -35,4 +35,49 @@
   border: 1px solid rgb(70, 69, 69);
   padding: 2px;
   
+}
+.formts{
+  width: 80%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid #6b6969;
+  padding-top: 2%;
+}
+.trans{
+  width: max-content;
+  margin: 0% auto;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: larger;
+  border-radius: 10%;
+  background-color: palevioletred;
+  color: antiquewhite;
+  border: none;
+}
+.inputs > * {
+  width: 18%;
+}
+.inputs{
+  border: solid 1px;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+.table{
+  margin: 0% auto;
+  margin-top: 2%;
+  width: 80%;
+  
+ 
+
+}
+.table table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: solid 1px; 
 }
