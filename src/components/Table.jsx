@@ -22,14 +22,17 @@ function  Table ({tableDetails}){
                   <td >{details.category}</td>
                   <td >{details.amount}</td>
                 </tr> 
+                
               )
             })
             }
         </tbody>
         </table>
+        
       
       </div>
   
     )
     }
+    
     export default Table;
