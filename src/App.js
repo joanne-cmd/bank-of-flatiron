@@ -15,11 +15,7 @@ function App() {
       
   }
 
-  function fetchData(url){
-    fetch(url)
-    .then(resp=>resp.json())
-    .then(data=>{ settableDetails(data)})
-  }
+ 
 
   function addTranscation(trans){
     fetch("http://localhost:4000/transactions",{

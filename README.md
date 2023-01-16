@@ -6,7 +6,7 @@
     Bank of flatiron is a project that is made up of reactjs that displays a list of your recent bank transactions .
 
 ## SCREENSHOTS
-![./src/Screenshot from 2023-01-16 21-44-53.png]()
+![Screenshot from 2023-01-16 21-44-53](https://user-images.githubusercontent.com/117694716/212748130-f89b845f-fd85-4416-9732-61f32ae63c69.png)
 
 
 
