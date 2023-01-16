@@ -52,7 +52,7 @@ const tableDetailsfilter=tableDetails.filter((detailstable)=>{
     <div className='app'>
         <Headers/>
         <Search handleSearchitem={handleSearchitem}searchitem={searchitem}/>
-        <Category addTranscation={addTranscation} />
+        
         <Table tableDetails={tableDetailsfilter}/>
     </div>
     
