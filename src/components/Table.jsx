@@ -21,7 +21,9 @@ function  Table ({tableDetails}){
                   <td >{details.description}</td>
                   <td >{details.category}</td>
                   <td >{details.amount}</td>
+                  <td>delete</td>
                 </tr> 
+
                 
               )
             })
